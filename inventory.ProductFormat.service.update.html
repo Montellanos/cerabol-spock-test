@@ -1,0 +1,567 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></meta>
+<style>body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+.back-link {
+  font-size: small;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+pre.title {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+pre.narrative {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 23px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 12px;
+}
+
+.feature-toc-error {
+  color: #F89A4F;
+}
+
+.feature-toc-failure {
+  color: #FF8080;
+}
+
+.feature-toc-ignored {
+  color: lightgray;
+}
+
+.feature-toc-pass {
+  color: green;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+.feature-description.ignored .reason {
+  color: black;
+  font-style: italic;
+  font-size: small;
+}
+
+div.extra-info {
+  font-size: small;
+}
+
+div.spec-headers {
+  margin: 4px;
+  font-style: italic;
+}
+
+div.spec-header {
+}
+
+div.issues {
+  margin-top: 6px;
+  padding: 10px 5px 5px 5px;
+  background-color: lemonchiffon;
+  color: black;
+  font-weight: 500;
+  font-size: small;
+  max-width: 50%;
+}
+
+div.pending-feature {
+  background-color: dodgerblue;
+  color: white;
+  margin-top: 6px;
+  padding: 5px;
+  text-align: center;
+  font-size: small;
+  max-width: 120px;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 2px 5px 2px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+pre.block-source {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+pre.block-source.error {
+  background-color: pink;
+  color: red;
+  font-weight: bold;
+}
+
+pre.block-source.pre-error {
+
+}
+
+pre.block-source.before-error {
+  margin-bottom: -14px;
+}
+
+pre.block-source.after-error {
+  color: gray;
+  margin-top: -14px;
+}
+
+pre.block-source.post-error {
+  color: gray;
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for inventory.ProductFormat.service.update</h2>
+<hr></hr>
+<div class='back-link'>
+<a href='index.html'>&lt;&lt; Back</a>
+</div>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Wed Dec 26 00:02:14 BOT 2018 by Jorge</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0,0%</td>
+<td>5,128 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<ul id='toc'>
+<li>
+<a href='#1036697410' class='feature-toc-error'>update a product format by id</a>
+</li>
+</ul>
+<tr>
+<td colspan='10'>
+<div class='feature-description error' id='1036697410'>
+<span>update a product format by id</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>I have a name and id of product format</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I try to update the product format</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>the product format has updated</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>id</th>
+<th class='ex-header'>name</th>
+<th class='ex-header'>command</th>
+<th class='ex-header'>expect</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>1</td>
+<td class='ex-value'>50x50</td>
+<td class='ex-value'>insert</td>
+<td class='ex-value'>50x50</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>1</td>
+<td class='ex-value'>1050x50</td>
+<td class='ex-value'></td>
+<td class='ex-value'>1050x50</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>1</td>
+<td class='ex-value'></td>
+<td class='ex-value'></td>
+<td class='ex-value'>1050x50</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>&lt;null&gt;</td>
+<td class='ex-value'></td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>2</td>
+<td class='ex-value'>1500000000x5000000000</td>
+<td class='ex-value'></td>
+<td class='ex-value'>280x78</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>3</td>
+<td class='ex-value'>#s!3</td>
+<td class='ex-value'></td>
+<td class='ex-value'>150x500</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>2</td>
+<td class='ex-value'>montellanos</td>
+<td class='ex-value'></td>
+<td class='ex-value'>280x78</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>2</td>
+<td class='ex-value'>!##</td>
+<td class='ex-value'></td>
+<td class='ex-value'>280x78</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>3</td>
+<td class='ex-value'>     </td>
+<td class='ex-value'></td>
+<td class='ex-value'>150x500</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>4</td>
+<td class='ex-value'>1235454</td>
+<td class='ex-value'></td>
+<td class='ex-value'>84x84</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>4</td>
+<td class='ex-value'>     ddd   </td>
+<td class='ex-value'></td>
+<td class='ex-value'></td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>1</td>
+<td class='ex-value'>   50x50   </td>
+<td class='ex-value'></td>
+<td class='ex-value'>50x50</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>&lt;null&gt;</td>
+<td class='ex-value'>&lt;null&gt;</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>
+<div class='spec-status'>2/13 passed</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<div>[1, , , 1050x50]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    &quot;&quot;   |  1050x50<br/>|                         false<br/>|                         7 differences (0% similarity)<br/>|                         (-------)<br/>|                         (1050x50)<br/>&lt;com.srlpunto.api.ProductFormat@77fce112 id=1 name= createdAt=2018-12-26 00:02:09.402 updatedAt=Wed Dec 26 00:02:10 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[null, , , 0]</div>
+<ul>
+<li>
+<pre>java.lang.NullPointerException</pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[2, 1500000000x5000000000, , 280x78]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    |    |  280x78<br/>|                    |    false<br/>|                    |    19 differences (9% similarity)<br/>|                    |    (15)0(0000000)x(5000000000)<br/>|                    |    (28)0(-------)x(78--------)<br/>|                    1500000000x5000000000<br/>&lt;com.srlpunto.api.ProductFormat@1f5cb417 id=2 name=1500000000x5000000000 createdAt=2018-12-26 00:02:09.404 updatedAt=Wed Dec 26 00:02:10 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[3, #s!3, , 150x500]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    #s!3 |  150x500<br/>|                         false<br/>|                         7 differences (0% similarity)<br/>|                         (#s!3---)<br/>|                         (150x500)<br/>&lt;com.srlpunto.api.ProductFormat@45a92f91 id=3 name=#s!3 createdAt=2018-12-26 00:02:09.405 updatedAt=Wed Dec 26 00:02:11 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[2, montellanos, , 280x78]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    |    |  280x78<br/>|                    |    false<br/>|                    |    11 differences (0% similarity)<br/>|                    |    (montellanos)<br/>|                    |    (280x78-----)<br/>|                    montellanos<br/>&lt;com.srlpunto.api.ProductFormat@47bd0384 id=2 name=montellanos createdAt=2018-12-26 00:02:09.404 updatedAt=Wed Dec 26 00:02:11 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[2, !##, , 280x78]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    !##  |  280x78<br/>|                         false<br/>|                         6 differences (0% similarity)<br/>|                         (!##---)<br/>|                         (280x78)<br/>&lt;com.srlpunto.api.ProductFormat@331f25c3 id=2 name=!## createdAt=2018-12-26 00:02:09.404 updatedAt=Wed Dec 26 00:02:12 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[3,      , , 150x500]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                         |  150x500<br/>|                         false<br/>|                         7 differences (0% similarity)<br/>|                         (     --)<br/>|                         (150x500)<br/>&lt;com.srlpunto.api.ProductFormat@3b358b9f id=3 name=      createdAt=2018-12-26 00:02:09.405 updatedAt=Wed Dec 26 00:02:12 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[4, 1235454, , 84x84]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    |    |  84x84<br/>|                    |    false<br/>|                    |    6 differences (14% similarity)<br/>|                    |    (1235)4(54)<br/>|                    |    (84x8)4(--)<br/>|                    1235454<br/>&lt;com.srlpunto.api.ProductFormat@698e796c id=4 name=1235454 createdAt=2018-12-26 00:02:09.406 updatedAt=Wed Dec 26 00:02:13 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[4,      ddd   , , ]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    |    |  &quot;&quot;<br/>|                    |    false<br/>|                    |    11 differences (0% similarity)<br/>|                    |    (     ddd   )<br/>|                    |    (-----------)<br/>|                         ddd   <br/>&lt;com.srlpunto.api.ProductFormat@2723170a id=4 name=     ddd    createdAt=2018-12-26 00:02:09.406 updatedAt=Wed Dec 26 00:02:13 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[1,    50x50   , , 50x50]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>updatedProductFormat.name == expect<br/>|                    |    |  |<br/>|                    |    |  50x50<br/>|                    |    false<br/>|                    |    6 differences (45% similarity)<br/>|                    |    (   )50x50(   )<br/>|                    |    (---)50x50(---)<br/>|                       50x50   <br/>&lt;com.srlpunto.api.ProductFormat@64ae7221 id=1 name=   50x50    createdAt=2018-12-26 00:02:09.402 updatedAt=Wed Dec 26 00:02:13 BOT 2018 state=true fullCount=0&gt;<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[null, null, , 0]</div>
+<ul>
+<li>
+<pre>java.lang.NullPointerException</pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>
