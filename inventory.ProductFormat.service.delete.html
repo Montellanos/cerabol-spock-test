@@ -244,14 +244,14 @@ div.footer {
 </style>
 </head>
 <body>
-<h2>Report for inventory.ProductFormat.BaseSpec</h2>
+<h2>Report for inventory.ProductFormat.service.delete</h2>
 <hr></hr>
 <div class='back-link'>
 <a href='index.html'>&lt;&lt; Back</a>
 </div>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Wed Dec 26 21:39:22 BOT 2018 by Jorge</div>
+<div class='date-test-ran'>Created on Wed Dec 26 21:39:33 BOT 2018 by Jorge</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -263,12 +263,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100,0%</td>
-<td>0,084 seconds</td>
+<td>0,0%</td>
+<td>10,332 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -280,7 +280,169 @@ div.footer {
 <col class='block-text-col'></col>
 </colgroup>
 <tbody>
-<ul id='toc'></ul>
+<ul id='toc'>
+<li>
+<a href='#-126939072' class='feature-toc-error'>delete a product format by Id</a>
+</li>
+</ul>
+<tr>
+<td colspan='10'>
+<div class='feature-description error' id='-126939072'>
+<span>delete a product format by Id</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>I have a product format Id</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>I try to delete the product format</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>the product format changed her state to false</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>id</th>
+<th class='ex-header'>command</th>
+<th class='ex-header'>expect</th>
+</thead>
+<tbody>
+<tr class='ex-pass'>
+<td class='ex-value'>1</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>1</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>10</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>10</td>
+<td class='ex-value'>insert</td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>1</td>
+<td class='ex-value'></td>
+<td class='ex-value'>false</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>1</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>2</td>
+<td class='ex-value'></td>
+<td class='ex-value'>false</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>3</td>
+<td class='ex-value'></td>
+<td class='ex-value'>false</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>4</td>
+<td class='ex-value'></td>
+<td class='ex-value'>false</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-pass'>
+<td class='ex-value'>5</td>
+<td class='ex-value'></td>
+<td class='ex-value'>false</td>
+<td class='ex-result'>OK</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>&lt;null&gt;</td>
+<td class='ex-value'></td>
+<td class='ex-value'>0</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>
+<div class='spec-status'>9/11 passed</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<div>[1, , 0]</div>
+<ul>
+<li>
+<pre>Condition not satisfied:<br/><br/>productFormatState == expect<br/>|                  |  |<br/>false              |  0<br/>                   false<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[null, , 0]</div>
+<ul>
+<li>
+<pre>java.lang.NullPointerException</pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
 </tbody>
 </table>
 <hr></hr>
